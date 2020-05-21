@@ -1,0 +1,77 @@
+﻿@model ProjectUEF.Models.GioiThieu
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout - Admin.cshtml";
+}
+
+<center>
+    <h2>Create</h2>
+</center>
+
+@using (Html.BeginForm("Create", "GioiThieux", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="card mb-4">
+        <div class="card-body">
+            <form>
+                <div class="form-horizontal">
+                    <h4>Giới Thiệu</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group row">
+                        @Html.LabelFor(model => model.TieuDe, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.TieuDe, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.TieuDe, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        @Html.LabelFor(model => model.NgayTao, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input type="date" name="NgayTao" />
+                            @Html.ValidationMessageFor(model => model.NgayTao, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        @Html.LabelFor(model => model.NgayChinhSua, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input type="date" name="NgayChinhSua" />
+                            @Html.ValidationMessageFor(model => model.NgayChinhSua, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        @Html.LabelFor(model => model.NoiDung, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <textarea name="NoiDung" id="NoiDung" class="ckeditor" rows="15"></textarea>
+                           
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        @Html.LabelFor(model => model.HinhAnh, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" name="Image" accept=".jpg,.bmp,.png">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                            @Html.ValidationMessageFor(model => model.HinhAnh, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Thêm mới" class="btn btn-success">
+                        <a href="/Admin/GioiThieux/Index" class="btn btn-warning">Hủy</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+}
+<script src="~/Scripts/ckeditor/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('NoiDung');
+</script>

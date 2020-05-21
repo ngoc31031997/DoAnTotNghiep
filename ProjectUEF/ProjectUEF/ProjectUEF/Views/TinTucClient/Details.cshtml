@@ -1,0 +1,132 @@
+﻿@model ProjectUEF.Models.TinTuc
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout - Client.cshtml";
+}
+@*--------------------------------------------------------------*@
+<main id="main-content">
+            <div class="page-inner">
+
+                <div class="container">
+                    <div class="location">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/home/Index">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="/TinTucClient/Index">Tin tức</a></li>
+                            <li class="breadcrumb-item active">@Model.DanhMucTinTuc.TenDanhMuc</li>
+                        </ol>
+                    </div>
+
+                    <div class="panel">
+                        <div class="row">
+                            <div class="col-lg-8 panel-item news-detail">
+                                <article class="entry wow fadeInUp">
+                                    <span class="badge badge-primary">Hoạt động xã hội</span>
+
+                                    <header class="pt-3 mb-3">
+                                        <h1 class="entry-title">@Model.TieuDe</h1>
+                                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                            <div class="meta">
+                                                <li><i class="fa fa-clock-o"></i> @Model.NgayTao </li>
+                                            </div>                                            
+                                        </div>
+                                    </header>
+
+                                    <div class="entry-content"> 
+                                        @Html.Raw(Model.NoiDung)
+
+                                    </div>
+
+                                </article>
+
+
+                                <div class="comments wow fadeInUp">
+                                    <div class="header-comments d-flex align-items-center justify-content-between">
+                                        <div class="logo">
+                                            <img src="~/Content/Client/img/brasol.vn-logo-hutech-avatars-000070252691-ftki2r-t500x500.jpg" alt="Đại học Quốc Gia Tp Hồ Chí Minh" width="160"></a>
+                                        </div>
+                                        <div class="links" style="display: table">
+                                            <button data-toggle="modal"
+                                                    data-target="#registerModal">
+                                                Đăng ký
+                                            </button>
+                                            <span>&nbsp;/&nbsp;</span>
+                                            <button data-toggle="modal"
+                                                    data-target="#loginModal">
+                                                Đăng nhập
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="comments-form">
+                                        <form action="" method="post" id="form_comment">
+                                            <div class="form-group">
+                                                <textarea class="form-control" name="cmdata" id="cmdata"
+                                                          placeholder="Nội dung bình luận"></textarea>
+                                                <div id="cmdata_error" class="invalid-feedback">Vui lòng nhập nội dung</div>
+                                            </div>
+                                            <input value="2700" name="news" id="news_id" type="hidden">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <input class="form-control" name="captcha" id="captcha"
+                                                                       placeholder="Mã xác nhận" />
+                                                                <div id="captcha_error" class="invalid-feedback">
+                                                                    Vui lòng nhập mã xác nhận
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <img class="imgcaptcha" src="/captcha?c=comment"
+                                                                     style="height:40px" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="text-right">
+                                                        <button class="btn btn-blue text-uppercase" id="sendComment"
+                                                                type="button">
+                                                            Gửi
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="comments-list">
+                                        <div class="comments-item text-center">
+                                            <p>Hãy là người bình luận đầu tiên</p>
+
+                                        </div>
+                                    </div>
+                                    <input type="hidden" id="news_id" value="2700">
+                                    <div class="view-more-comment">
+                                    </div>
+                                </div>
+                                <!--e: comments-->
+                            </div>
+                            
+                        </div>
+                        <!-- read-more-->
+                        
+                        <!-- read-more-->
+                    </div>
+                    <!--        -->
+                </div>
+                <!-- modal register-->
+                
+                <!-- e: modal register-->
+                <!-- modal login-->
+                
+                <!-- e: modal login-->
+            </div>
+            <script>
+
+
+            </script>
+        </main>
+

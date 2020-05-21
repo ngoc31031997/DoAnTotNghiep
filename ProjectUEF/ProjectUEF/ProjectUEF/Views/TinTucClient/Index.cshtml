@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ProjectUEF.Models.TinTuc>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout - Client.cshtml";
+}
+@*-------------*@
+ ]<main id="main-content">
+    <div class="sub-banner" style="background-image:url('~/Content/Client/img/banner_event_541x285-1522913808.jpg')">
+        <div class="text text-center">
+            <h2 class="page-title" style="color:black">Tin tức</h2>
+            <p class="sub-title" style="color:black">Tin tức, tiêu điểm của DH HUTECH</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="group-event-top panel">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-4 panel-item">
+                        <div class="box-news-thumnail box--shadow wow fadeInUp">
+                            <div class="row align-items-center">
+                                <div class="col-lg-12 col-md-4 col-sm-5">
+                                    <a class="effect-scale" href="/TinTucClient/Details/@item.ID">
+                                        <img class="scale-img lazyload"
+                                             src="@item.HinhAnh"
+                                             data-src="#" width="370"
+                                             height="200">
+                                        <span class="badge badge-primary"> @item.DanhMucTinTuc.TenDanhMuc</span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-12 col-md-8 col-sm-7">
+                                    <div class="box-news">
+                                        <h3 class="mb-0 ">
+                                            <a href="/TinTucClient/Details/@item.ID"
+                                               class="news-title crop-text-2">@item.TieuDe</a>
+                                        </h3>
+                                        <ul class="meta">
+                                            <li>
+                                                <i class="fa fa-clock-o"></i> @item.NgayTao
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+    
+</main>

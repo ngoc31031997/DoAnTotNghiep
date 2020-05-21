@@ -1,0 +1,99 @@
+﻿@model IEnumerable<ProjectUEF.Models.TinTuc>
+@{ 
+    int stt = 1;
+}
+<section class="section section__news">
+    <div class="container">
+        <div class="section__title">
+            <h2>Tin tức</h2>
+        </div>
+        <div class="section__content">
+            @if (stt <= 3)
+            {
+                <div class="group-news panel">
+                    <div class="row">
+                        @foreach (var item in Model)
+                        {
+                            <div class="col-lg-4 panel-item">
+                                <div class="box-news-thumnail box--shadow wow fadeInUp" data-delay="1.85" style="visibility: visible;">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-12 col-md-4 col-sm-5">
+                                            <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/dhqg-hcm-co-40-tan-giao-su-pho-giao-su/323337346864.html" class="effect-scale">
+                                                <img class="scale-img lazyload" src="@item.HinhAnh"  width="370" height="151" alt="ĐHQG-HCM có 40 tân giáo sư, phó giáo sư" style="">
+                                                <span class="badge badge-primary">
+                                                    @item.DanhMucTinTuc.TenDanhMuc
+                                                </span>
+                                            </a>
+
+                                        </div>
+                                        <div class="col-lg-12 col-md-8 col-sm-7">
+                                            <div class="box-news">
+                                                <h3>
+                                                    <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/dhqg-hcm-co-40-tan-giao-su-pho-giao-su/323337346864.html" class="news-title crop-text-2">
+                                                        @item.TieuDe
+                                                    </a>
+                                                </h3>
+                                                <ul class="meta">
+                                                    <li>
+                                                        <i class="fa fa-clock-o"></i>
+                                                        @item.NgayTao
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+                stt++;
+            }
+            else
+            {
+                <div class="group-news panel">
+
+                    <div class="row">
+                        @foreach (var item in Model)
+                        {
+                            <div class="col-lg-4 panel-item">
+                                <div class="box-news-thumnail box--shadow wow fadeInUp" data-delay="1.85" style="visibility: visible;">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-12 col-md-4 col-sm-5">
+                                            <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/trao-tang-huy-chuong-huu-nghi-cho-giam-doc-minatec/323337316864.html" class="effect-scale">
+                                                <img class="scale-img lazyload" src="@item.HinhAnh" width="370" height="151" alt="Trao tặng Huy chương Hữu nghị cho Giám đốc MINATEC" style="">
+                                                <span class="badge badge-primary">
+                                                    @item.DanhMucTinTuc.TenDanhMuc
+                                                </span>
+                                            </a>
+
+                                        </div>
+                                        <div class="col-lg-12 col-md-8 col-sm-7">
+                                            <div class="box-news">
+                                                <h3>
+                                                    <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/trao-tang-huy-chuong-huu-nghi-cho-giam-doc-minatec/323337316864.html" class="news-title crop-text-2">
+                                                        @item.TieuDe
+                                                    </a>
+                                                </h3>
+                                                <ul class="meta">
+                                                    <li>
+                                                        <i class="fa fa-clock-o"></i>
+                                                        @item.NgayTao
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        </div>
+                </div>
+            }
+
+
+            <div class="text-center"><a class="btn btn-link btn__angle" href="/TinTucClient/index"> Xem thêm</a></div>
+        </div>
+    </div>
+</section>

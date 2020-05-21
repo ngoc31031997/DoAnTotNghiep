@@ -1,0 +1,162 @@
+﻿@model IEnumerable<ProjectUEF.Models.BaiBao>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout - Client.cshtml";
+}
+
+
+@*----------------------------------------------------------------------------------------------*@
+<main id="main-content">
+    <div class="sub-banner" style="background-image:url()">
+        <div class="text text-center">
+            <h2 class="page-title" style="color:black">Bài Báo</h2>
+            <p class="sub-title" style="color:black">&nbsp;Hoạt động nghiên cứu khoa học và chuyển giao công nghệ HUTECH</p>
+        </div>
+    </div>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DonVi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GhiChu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenBaiBao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenTapChi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThoiGianSanXuat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChiSoISSNVaISBN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThuocDanhMuc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoLuongTacGia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QuyDoiTieuChuan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CapDoDeTai.CapDo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DanhMucBaiBao.TenDanhMuc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LoaiNghienCuu.TenLoaiNghienCuu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LyLichKhoaHoc.MaQuanLy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TongDiem1.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VaiTro.TenVaiTro)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DonVi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GhiChu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenBaiBao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenTapChi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThoiGianSanXuat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChiSoISSNVaISBN)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThuocDanhMuc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SoLuongTacGia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuyDoiTieuChuan)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CapDoDeTai.CapDo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DanhMucBaiBao.TenDanhMuc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LoaiNghienCuu.TenLoaiNghienCuu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LyLichKhoaHoc.MaQuanLy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TongDiem1.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VaiTro.TenVaiTro)
+                </td>
+            </tr>
+        }
+
+    </table>
+    <div class="col-sm-12 col-md-7">
+
+        <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+            <ul class="pagination">
+                @{
+                    int numPage = ViewBag.numPage;
+                    int PageCurrent = ViewBag.pageCurrent;
+                    if (PageCurrent > 1)
+                    {
+                        int prePage = PageCurrent - 1;
+                        <li class="paginate_button page-item previous" id="dataTable_previous">
+                            <a href="?page=@prePage" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Trang trước</a>
+                        </li>
+                    }
+                    int i;
+                    for (i = 1; i <= numPage; i++)
+                    {
+                        if (i == PageCurrent)
+                        {
+                            <li class="paginate_button page-item active">
+                                <a href="?page=@i" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">@i</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="paginate_button page-item ">
+                                <a href="?page=@i" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">@i</a>
+                            </li>
+                        }
+                    }
+                    if (PageCurrent >= 1 && PageCurrent < numPage)
+                    {
+                        int nextPage = PageCurrent + 1;
+                        <li class="paginate_button page-item next" id="dataTable_next">
+                            <a href="?page=@nextPage" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Trang sau</a>
+                        </li>
+                    }
+                }
+
+            </ul>
+        </div>
+
+    </div>
+</main>
+

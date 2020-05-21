@@ -1,0 +1,1159 @@
+﻿@*@model ProjectUEF.Models.GioiThieu
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout - Client.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>GioiThieu</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.TieuDe, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TieuDe, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TieuDe, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NgayTao, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NgayTao, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NgayTao, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NgayChinhSua, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NgayChinhSua, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NgayChinhSua, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NoiDung, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NoiDung, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NoiDung, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HinhAnh, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.HinhAnh, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.HinhAnh, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>*@
+<div class="wrapper" id="wrapper">
+
+    
+    <main id="main-content">
+        <section class="section section__slide slick-initialized slick-slider slick-dotted">
+            <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+            <div class="slick-list draggable">
+                <div class="slick-track" style="opacity: 1; width: 20449px; transform: translate3d(-3718px, 0px, 0px);">
+                    <div class="item slide-bg-img overlay slick-slide slick-cloned" style="background-image: url(&quot;https://static.vnuhcm.edu.vn/images/2020/02/21/banner_qs-200221012019.jpg&quot;); width: 1859px;" data-slick-index="-1" aria-hidden="true" tabindex="-1">
+                        <div class="slide-overlay">
+                            <div class="container">
+                                <div class="slide-caption">
+                                    <a href=" https://vnuhcm.edu.vn/ve-dhqg-hcm_33396864/dhqg-hcm-thuoc-top-701-750-bang-xep-hang-cac-dai-hoc-the-gioi-qs-world/323130386864.html" tabindex="-1">
+                                        <h2>ĐHQG-HCM thuộc Top 701-750 bảng xếp hạng các đại học thế giới QS World</h2>
+                                    </a>
+                                    <p class="dotdotdot" style="overflow-wrap: break-word;"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="item slide-bg-img overlay slick-slide" style="background-image: url(&quot;https://static.vnuhcm.edu.vn/images/2019/11/28/coverwebqs-191128055945.jpg&quot;); width: 1859px;" data-slick-index="0" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
+                        <div class="slide-overlay">
+                            <div class="container">
+                                <div class="slide-caption">
+                                    <a href="https://vnuhcm.edu.vn/ve-dhqg-hcm_33396864/dhqg-hcm-xep-thu-143-qs-asia/323431356864.html" tabindex="-1">
+                                        <h2>ĐHQG-HCM XẾP THỨ 143 QS ASIA</h2>
+                                    </a>
+                                    <p class="dotdotdot" style="overflow-wrap: break-word;"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="item slide-bg-img overlay slick-slide slick-current slick-active" style="background-image: url(&quot;https://static.vnuhcm.edu.vn/images/2019/09/11/baner_final-190911013104.jpg&quot;); width: 1859px;" data-slick-index="1" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
+                        <div class="slide-overlay">
+                            <div class="container">
+                                <div class="slide-caption">
+                                    <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/dhqg-hcm-dung-trong-top-1001-tren-bang-xep-hang-the/323237326864.html" tabindex="0">
+                                        <h2>ĐHQG-HCM ĐỨNG TRONG TOP 1001+ TRÊN BẢNG XẾP HẠNG THE</h2>
+                                    </a>
+                                    <p class="dotdotdot" style="overflow-wrap: break-word;"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="item slide-bg-img overlay slick-slide" style="background-image: url(&quot;https://static.vnuhcm.edu.vn/images/2020/05/18/ngay_khcn_final-200518042516.jpg&quot;); width: 1859px;" data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02">
+                        <div class="slide-overlay">
+                            <div class="container">
+                                <div class="slide-caption">
+                                    <a href=" " tabindex="-1">
+                                        <h2>CHÀO MỪNG NGÀY KHOA HỌC VÀ CÔNG NGHỆ VIỆT NAM 18/5</h2>
+                                    </a>
+                                    <p class="dotdotdot" style="overflow-wrap: break-word;"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="item slide-bg-img overlay slick-slide" style="background-image: url(&quot;https://static.vnuhcm.edu.vn/images/2019/09/12/banner-190912011407.jpg&quot;); width: 1859px;" data-slick-index="3" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03">
+                        <div class="slide-overlay">
+                            <div class="container">
+                                <div class="slide-caption">
+                                    <a href=" https://vnuhcm.edu.vn/tin-tuc_32346864/dhqg-hcm-khai-mac-dot-danh-gia-aun-lan-thu-18/323236376864.html" tabindex="-1">
+                                        <h2>ĐHQG-HCM KHAI MẠC ĐỢT ĐÁNH GIÁ AUN LẦN THỨ 18</h2>
+                                    </a>
+                                    <p class="dotdotdot" style="overflow-wrap: break-word;"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="item slide-bg-img overlay slick-slide" style="background-image: url(&quot;https://static.vnuhcm.edu.vn/images/2020/02/21/banner_qs-200221012019.jpg&quot;); width: 1859px;" data-slick-index="4" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide04" aria-describedby="slick-slide-control04">
+                        <div class="slide-overlay">
+                            <div class="container">
+                                <div class="slide-caption">
+                                    <a href=" https://vnuhcm.edu.vn/ve-dhqg-hcm_33396864/dhqg-hcm-thuoc-top-701-750-bang-xep-hang-cac-dai-hoc-the-gioi-qs-world/323130386864.html" tabindex="-1">
+                                        <h2>ĐHQG-HCM thuộc Top 701-750 bảng xếp hạng các đại học thế giới QS World</h2>
+                                    </a>
+                                    <p class="dotdotdot" style="overflow-wrap: break-word;"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="item slide-bg-img overlay slick-slide slick-cloned" style="background-image: url(&quot;https://static.vnuhcm.edu.vn/images/2019/11/28/coverwebqs-191128055945.jpg&quot;); width: 1859px;" data-slick-index="5" aria-hidden="true" tabindex="-1">
+                        <div class="slide-overlay">
+                            <div class="container">
+                                <div class="slide-caption">
+                                    <a href="https://vnuhcm.edu.vn/ve-dhqg-hcm_33396864/dhqg-hcm-xep-thu-143-qs-asia/323431356864.html" tabindex="-1">
+                                        <h2>ĐHQG-HCM XẾP THỨ 143 QS ASIA</h2>
+                                    </a>
+                                    <p class="dotdotdot" style="overflow-wrap: break-word;"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="item slide-bg-img overlay slick-slide slick-cloned" style="background-image: url(&quot;https://static.vnuhcm.edu.vn/images/2019/09/11/baner_final-190911013104.jpg&quot;); width: 1859px;" data-slick-index="6" aria-hidden="true" tabindex="-1">
+                        <div class="slide-overlay">
+                            <div class="container">
+                                <div class="slide-caption">
+                                    <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/dhqg-hcm-dung-trong-top-1001-tren-bang-xep-hang-the/323237326864.html" tabindex="-1">
+                                        <h2>ĐHQG-HCM ĐỨNG TRONG TOP 1001+ TRÊN BẢNG XẾP HẠNG THE</h2>
+                                    </a>
+                                    <p class="dotdotdot" style="overflow-wrap: break-word;"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="item slide-bg-img overlay slick-slide slick-cloned" style="background-image: url(&quot;https://static.vnuhcm.edu.vn/images/2020/05/18/ngay_khcn_final-200518042516.jpg&quot;); width: 1859px;" data-slick-index="7" aria-hidden="true" tabindex="-1">
+                        <div class="slide-overlay">
+                            <div class="container">
+                                <div class="slide-caption">
+                                    <a href=" " tabindex="-1">
+                                        <h2>CHÀO MỪNG NGÀY KHOA HỌC VÀ CÔNG NGHỆ VIỆT NAM 18/5</h2>
+                                    </a>
+                                    <p class="dotdotdot" style="overflow-wrap: break-word;"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="item slide-bg-img overlay slick-slide slick-cloned" style="background-image: url(&quot;https://static.vnuhcm.edu.vn/images/2019/09/12/banner-190912011407.jpg&quot;); width: 1859px;" data-slick-index="8" aria-hidden="true" tabindex="-1">
+                        <div class="slide-overlay">
+                            <div class="container">
+                                <div class="slide-caption">
+                                    <a href=" https://vnuhcm.edu.vn/tin-tuc_32346864/dhqg-hcm-khai-mac-dot-danh-gia-aun-lan-thu-18/323236376864.html" tabindex="-1">
+                                        <h2>ĐHQG-HCM KHAI MẠC ĐỢT ĐÁNH GIÁ AUN LẦN THỨ 18</h2>
+                                    </a>
+                                    <p class="dotdotdot" style="overflow-wrap: break-word;"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="item slide-bg-img overlay slick-slide slick-cloned" style="background-image: url(&quot;https://static.vnuhcm.edu.vn/images/2020/02/21/banner_qs-200221012019.jpg&quot;); width: 1859px;" data-slick-index="9" aria-hidden="true" tabindex="-1">
+                        <div class="slide-overlay">
+                            <div class="container">
+                                <div class="slide-caption">
+                                    <a href=" https://vnuhcm.edu.vn/ve-dhqg-hcm_33396864/dhqg-hcm-thuoc-top-701-750-bang-xep-hang-cac-dai-hoc-the-gioi-qs-world/323130386864.html" tabindex="-1">
+                                        <h2>ĐHQG-HCM thuộc Top 701-750 bảng xếp hạng các đại học thế giới QS World</h2>
+                                    </a>
+                                    <p class="dotdotdot" style="overflow-wrap: break-word;"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 5" tabindex="-1">1</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 5" tabindex="0" aria-selected="true">2</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 5" tabindex="-1">3</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 5" tabindex="-1">4</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control04" aria-controls="slick-slide04" aria-label="5 of 5" tabindex="-1">5</button></li></ul>
+        </section>
+        <!-- e: section__slide-->
+        <section class="section section__news">
+            <div class="container">
+                <div class="section__title">
+                    <h2>Tin tức</h2>
+                </div>
+                <div class="section__content">
+                    <div class="group-news panel">
+                        <div class="row">
+                            <div class="col-lg-4 panel-item">
+                                <div class="box-news-thumnail box--shadow wow fadeInUp" data-delay="1.85" style="visibility: visible;">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-12 col-md-4 col-sm-5">
+                                            <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/doan-co-quan-dhqg-hcm-trong-cay-doi-doi-nho-on-bac-ho-nam-2020/323639376864.html" class="effect-scale">
+                                                <img class="scale-img lazyload" src="https://static.vnuhcm.edu.vn/images/20200518/f8265e3b9787b57fa8ea29aabd39c0a1.jpg" data-src="https://static.vnuhcm.edu.vn/images/20200518/f8265e3b9787b57fa8ea29aabd39c0a1.jpg" width="370" height="151" alt="Đoàn cơ quan ĐHQG-HCM trồng cây “Đời đời nhớ ơn Bác Hồ” năm 2020" style="">
+                                                <span class="badge badge-primary">
+                                                    Hoạt động xã hội
+                                                </span>
+                                            </a>
+
+                                        </div>
+                                        <div class="col-lg-12 col-md-8 col-sm-7">
+                                            <div class="box-news">
+                                                <h3>
+                                                    <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/doan-co-quan-dhqg-hcm-trong-cay-doi-doi-nho-on-bac-ho-nam-2020/323639376864.html" class="news-title crop-text-2">
+                                                        Đoàn cơ quan ĐHQG-HCM trồng cây “Đời đời nhớ ơn Bác Hồ” năm 2020
+                                                    </a>
+                                                </h3>
+                                                <ul class="meta">
+                                                    <li>
+                                                        <i class="fa fa-clock-o"></i>
+                                                        18/05/2020
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 panel-item">
+                                <div class="box-news-thumnail box--shadow wow fadeInUp" data-delay="1.85" style="visibility: visible;">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-12 col-md-4 col-sm-5">
+                                            <a href="https://vnuhcm.edu.vn/dao-tao_33376864/thi-danh-gia-nang-luc-2020-chi-to-chuc-1-dot-thi/323639356864.html" class="effect-scale">
+                                                <img class="scale-img lazyload" src="https://static.vnuhcm.edu.vn/images/20200515/54082cb46d579865c1ccbb2100d5b0e2.jpg" data-src="https://static.vnuhcm.edu.vn/images/20200515/54082cb46d579865c1ccbb2100d5b0e2.jpg" width="370" height="151" alt="Thi Đánh giá năng lực 2020: Chỉ tổ chức 1 đợt thi " style="">
+                                                <span class="badge badge-primary">
+                                                    Tuyển sinh
+                                                </span>
+                                            </a>
+
+                                        </div>
+                                        <div class="col-lg-12 col-md-8 col-sm-7">
+                                            <div class="box-news">
+                                                <h3>
+                                                    <a href="https://vnuhcm.edu.vn/dao-tao_33376864/thi-danh-gia-nang-luc-2020-chi-to-chuc-1-dot-thi/323639356864.html" class="news-title crop-text-2">
+                                                        Thi Đánh giá năng lực 2020: Chỉ tổ chức 1 đợt thi
+                                                    </a>
+                                                </h3>
+                                                <ul class="meta">
+                                                    <li>
+                                                        <i class="fa fa-clock-o"></i>
+                                                        15/05/2020
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 panel-item">
+                                <div class="box-news-thumnail box--shadow wow fadeInUp" data-delay="1.85" style="visibility: visible;">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-12 col-md-4 col-sm-5">
+                                            <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/dhqg-hcm-ban-hanh-bo-chi-so-danh-gia-tinh-rui-ro-lay-nhiem-virus-corona/323637386864.html" class="effect-scale">
+                                                <img class="scale-img lazyload" src="https://static.vnuhcm.edu.vn/images/20200505/03793dd3cf828958b70df17f51c2ff44.jpg" data-src="https://static.vnuhcm.edu.vn/images/20200505/03793dd3cf828958b70df17f51c2ff44.jpg" width="370" height="151" alt="ĐHQG-HCM ban hành Bộ chỉ số đánh giá tính rủi ro lây nhiễm virus Corona" style="">
+                                                <span class="badge badge-primary">
+                                                    Hoạt động xã hội
+                                                </span>
+                                            </a>
+
+                                        </div>
+                                        <div class="col-lg-12 col-md-8 col-sm-7">
+                                            <div class="box-news">
+                                                <h3>
+                                                    <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/dhqg-hcm-ban-hanh-bo-chi-so-danh-gia-tinh-rui-ro-lay-nhiem-virus-corona/323637386864.html" class="news-title crop-text-2">
+                                                        ĐHQG-HCM ban hành Bộ chỉ số đánh giá tính rủi ro lây nhiễm virus Corona
+                                                    </a>
+                                                </h3>
+                                                <ul class="meta">
+                                                    <li>
+                                                        <i class="fa fa-clock-o"></i>
+                                                        28/04/2020
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-news panel">
+
+                        <div class="row">
+                            <div class="col-lg-4 panel-item">
+                                <div class="box-news-thumnail box--shadow wow fadeInUp" data-delay="1.85" style="visibility: hidden; animation-name: none;">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-12 col-md-4 col-sm-5">
+                                            <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/thong-bao-lo-trinh-di-hoc-tro-lai-cua-sinh-vien-hoc-sinh-dhqg-hcm/323637356864.html" class="effect-scale">
+                                                <img class="scale-img lazyload" src="https://static.vnuhcm.edu.vn/images/20190530/d692e9203d5c70e5308050b1d34c7419.png" data-src="https://static.vnuhcm.edu.vn/images/20200427/c12f5459dca09571a3c061d2d051e7e7.JPG" width="370" height="151" alt="Thông báo lộ trình đi học trở lại của sinh viên, học sinh ĐHQG-HCM">
+                                                <span class="badge badge-primary">
+                                                    Hoạt động xã hội
+                                                </span>
+                                            </a>
+
+                                        </div>
+                                        <div class="col-lg-12 col-md-8 col-sm-7">
+                                            <div class="box-news">
+                                                <h3>
+                                                    <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/thong-bao-lo-trinh-di-hoc-tro-lai-cua-sinh-vien-hoc-sinh-dhqg-hcm/323637356864.html" class="news-title crop-text-2">
+                                                        Thông báo lộ trình đi học trở lại của sinh viên, học sinh ĐHQG-HCM
+                                                    </a>
+                                                </h3>
+                                                <ul class="meta">
+                                                    <li>
+                                                        <i class="fa fa-clock-o"></i>
+                                                        27/04/2020
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 panel-item">
+                                <div class="box-news-thumnail box--shadow wow fadeInUp" data-delay="1.85" style="visibility: hidden; animation-name: none;">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-12 col-md-4 col-sm-5">
+                                            <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/dhqg-hcm-tang-khau-trang-do-bao-ho-cho-benh-vien-benh-nhiet-doi-tp-hcm/323636356864.html" class="effect-scale">
+                                                <img class="scale-img lazyload" src="https://static.vnuhcm.edu.vn/images/20190530/d692e9203d5c70e5308050b1d34c7419.png" data-src="https://static.vnuhcm.edu.vn/images/20200410/2bad76c19c05cfbda30cc33d93b38f77.jpg" width="370" height="151" alt="ĐHQG-HCM tặng khẩu trang, đồ bảo hộ cho Bệnh viện Bệnh nhiệt đới TP.HCM">
+                                                <span class="badge badge-primary">
+                                                    Hoạt động xã hội
+                                                </span>
+                                            </a>
+
+                                        </div>
+                                        <div class="col-lg-12 col-md-8 col-sm-7">
+                                            <div class="box-news">
+                                                <h3>
+                                                    <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/dhqg-hcm-tang-khau-trang-do-bao-ho-cho-benh-vien-benh-nhiet-doi-tp-hcm/323636356864.html" class="news-title crop-text-2">
+                                                        ĐHQG-HCM tặng khẩu trang, đồ bảo hộ cho Bệnh viện Bệnh nhiệt đới TP.HCM
+                                                    </a>
+                                                </h3>
+                                                <ul class="meta">
+                                                    <li>
+                                                        <i class="fa fa-clock-o"></i>
+                                                        10/04/2020
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 panel-item">
+                                <div class="box-news-thumnail box--shadow wow fadeInUp" data-delay="1.85" style="visibility: hidden; animation-name: none;">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-12 col-md-4 col-sm-5">
+                                            <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/dhqg-hcm-tham-va-tang-qua-cho-luc-luong-tuyen-dau-chong-dich-covid-19/323636346864.html" class="effect-scale">
+                                                <img class="scale-img lazyload" src="https://static.vnuhcm.edu.vn/images/20190530/d692e9203d5c70e5308050b1d34c7419.png" data-src="https://static.vnuhcm.edu.vn/images/20200407/333ab3ca7f90140a7339f5df6f614450.jpg" width="370" height="151" alt="ĐHQG-HCM thăm và tặng quà cho lực lượng tuyến đầu chống dịch COVID-19">
+                                                <span class="badge badge-primary">
+                                                    Hoạt động xã hội
+                                                </span>
+                                            </a>
+
+                                        </div>
+                                        <div class="col-lg-12 col-md-8 col-sm-7">
+                                            <div class="box-news">
+                                                <h3>
+                                                    <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/dhqg-hcm-tham-va-tang-qua-cho-luc-luong-tuyen-dau-chong-dich-covid-19/323636346864.html" class="news-title crop-text-2">
+                                                        ĐHQG-HCM thăm và tặng quà cho lực lượng tuyến đầu chống dịch COVID-19
+                                                    </a>
+                                                </h3>
+                                                <ul class="meta">
+                                                    <li>
+                                                        <i class="fa fa-clock-o"></i>
+                                                        07/04/2020
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center"><a class="btn btn-link btn__angle" href="/tin-tuc/32346864"> Xem thêm</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section__video bg-light2">
+            <div class="container">
+                <div class="row">
+                    <!--            -->            <div class="col-lg-7 mb-5 mb-lg-0">
+                        <div class="events wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                            <div class="section__title">
+                                <h2>Sự kiện nổi bật</h2>
+                            </div>
+
+                            <div class="events-list">
+                                <div class="event-item d-flex">
+                                    <div class="date box--shadow">
+                                        <div class="date-wrap">
+                                            <span class="day">
+                                                27
+                                            </span>
+                                            <span class="month">
+                                                Tháng 02
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="event-item-content">
+
+                                        <h4 style="margin:  0">
+                                            <a href="/su-kien-sap-dien-ra/tu-van-huong-nghiep-toi-hieu-de-toi-chon-/323538376864.html" class="news-title-sm text-ellipsis">
+                                                Tư vấn hướng nghiệp: "Tôi hiểu để tôi chọn!"
+                                            </a>
+                                        </h4>
+                                        <ul class="meta text-ellipsis">
+                                            <li class="">
+                                                <i class="fa fa-clock-o"></i>
+                                                <time>
+                                                    09:00 - 11:30 &nbsp; &nbsp;
+                                                </time>
+
+                                                <i class="fa fa-map-marker"></i>
+                                                https://www.facebook.com/vnuhcm.info
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="events-list">
+                                <div class="event-item d-flex">
+                                    <div class="date box--shadow">
+                                        <div class="date-wrap">
+                                            <span class="day">
+                                                04
+                                            </span>
+                                            <span class="month">
+                                                Tháng 01
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="event-item-content">
+
+                                        <h4 style="margin:  0">
+                                            <a href="/su-kien-sap-dien-ra/20-nam-thanh-lap-trung-tam-quan-ly-ky-tuc-xa/323437396864.html" class="news-title-sm text-ellipsis">
+                                                20 năm thành lập Trung tâm Quản lý  Ký túc xá
+                                            </a>
+                                        </h4>
+                                        <ul class="meta text-ellipsis">
+                                            <li class="">
+                                                <i class="fa fa-clock-o"></i>
+                                                <time>
+                                                    08:00 - 11:00 &nbsp; &nbsp;
+                                                </time>
+
+                                                <i class="fa fa-map-marker"></i>
+                                                Hội trường Trần Chí Đáo,  Nhà Điều hành ĐHQG-HCM, Phường Linh Trung, Quận Thủ Đức, TP.HCM
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="events-list">
+                                <div class="event-item d-flex">
+                                    <div class="date box--shadow">
+                                        <div class="date-wrap">
+                                            <span class="day">
+                                                14
+                                            </span>
+                                            <span class="month">
+                                                Tháng 12
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="event-item-content">
+
+                                        <h4 style="margin:  0">
+                                            <a href="/su-kien-sap-dien-ra/hoi-thao-vai-tro-cua-dai-hoc-trong-viec-trien-khai-thuc-hien-nghi-quyet-so-52-nq-tw-ve-cach-mang-cong-nghiep-lan-thu-4/323434356864.html" class="news-title-sm text-ellipsis">
+                                                Hội thảo vai trò của đại học trong việc triển khai thực hiện Nghị quyết số 52-NQ/TW về cách mạng công nghiệp lần thứ 4
+                                            </a>
+                                        </h4>
+                                        <ul class="meta text-ellipsis">
+                                            <li class="">
+                                                <i class="fa fa-clock-o"></i>
+                                                <time>
+                                                    08:00 - 11:30 &nbsp; &nbsp;
+                                                </time>
+
+                                                <i class="fa fa-map-marker"></i>
+                                                Hội trường A4, Trường Đại học Bách Khoa, số 268 Lý Thường Kiệt, Q.10
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="events-list">
+                                <div class="event-item d-flex">
+                                    <div class="date box--shadow">
+                                        <div class="date-wrap">
+                                            <span class="day">
+                                                13
+                                            </span>
+                                            <span class="month">
+                                                Tháng 12
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="event-item-content">
+
+                                        <h4 style="margin:  0">
+                                            <a href="/su-kien-sap-dien-ra/toa-dam-doanh-nghiep-va-sinh-vien/323434366864.html" class="news-title-sm text-ellipsis">
+                                                Tọa đàm Doanh nghiệp và Sinh viên
+                                            </a>
+                                        </h4>
+                                        <ul class="meta text-ellipsis">
+                                            <li class="">
+                                                <i class="fa fa-clock-o"></i>
+                                                <time>
+                                                    08:00 - 11:00 &nbsp; &nbsp;
+                                                </time>
+
+                                                <i class="fa fa-map-marker"></i>
+                                                Phòng họp 512, Nhà điều hành ĐHQG-HCM,&nbsp;Võ Trường Toản, P. Linh Trung, Q. Thủ Đức, Tp.HCM.
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="events-list">
+                                <div class="event-item d-flex">
+                                    <div class="date box--shadow">
+                                        <div class="date-wrap">
+                                            <span class="day">
+                                                12
+                                            </span>
+                                            <span class="month">
+                                                Tháng 12
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="event-item-content">
+
+                                        <h4 style="margin:  0">
+                                            <a href="/su-kien-sap-dien-ra/le-khanh-thanh-trung-tam-uom-tao-doanh-nghiep-doi-moi-sang-tao-/323432396864.html" class="news-title-sm text-ellipsis">
+                                                Lễ khánh thành “Trung tâm ươm tạo doanh nghiệp đổi mới sáng tạo”
+                                            </a>
+                                        </h4>
+                                        <ul class="meta text-ellipsis">
+                                            <li class="">
+                                                <i class="fa fa-clock-o"></i>
+                                                <time>
+                                                    13:00 - 16:30 &nbsp; &nbsp;
+                                                </time>
+
+                                                <i class="fa fa-map-marker"></i>
+                                                Khu Công nghệ Phần mềm ĐHQG-HCM, Khu phố 6, Phường Linh Trung, Quận Thủ Đức, TP.HCM
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <a class="btn btn-link btn__angle" href="/su-kien-sap-dien-ra"> Xem thêm</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="videos wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                            <div class="section__title">
+                                <h2>Video nổi bật</h2>
+                            </div>
+                            <div class="video-container video__slide slick-initialized slick-slider">
+                                <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+                                <!-- item-->
+                                <div class="slick-list draggable">
+                                    <div class="slick-track" style="opacity: 1; width: 6110px; transform: translate3d(-470px, 0px, 0px);">
+                                        <div class="item slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 470px;" tabindex="-1">
+                                            <div class="video-item">
+                                                <div class="image" style="background-image: url(https://static.vnuhcm.edu.vn/images/20190403/7e9b00123f629dfb3d75295f6e06dddd.jpg);
+                        height: 380px;
+                        width: 100%;
+                        background-size: 100% 100%;
+                        background-repeat:  no-repeat;
+                        background-position:  top;">
+                                                </div>
+                                                <a class="video-play" href="https://vnuhcm.edu.vn/video/ky-thi-danh-gia-nang-luc-2019-dot-1/313932316864.html" tabindex="-1">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                                <div class="slide-caption video">
+                                                    <div class="text">
+                                                        <h3>
+                                                            <a href="https://vnuhcm.edu.vn/video/ky-thi-danh-gia-nang-luc-2019-dot-1/313932316864.html" class="news-title-sm text-ellipsis" tabindex="-1">
+                                                                Kỳ thi Đánh giá năng lực 2019 đợt 1
+                                                            </a>
+                                                        </h3>
+                                                        <p class="dotdotdot" style="overflow-wrap: break-word;"> Ngày 31/3, ĐHQG-HCM tổ chức kỳ thi Đánh giá năng lực đợt 1.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 470px;" tabindex="0">
+                                            <div class="video-item">
+                                                <div class="image" style="background-image: url(https://static.vnuhcm.edu.vn/images/20191227/90e4aae767848c51ad7b66bf3cab0a68.jpg);
+                        height: 380px;
+                        width: 100%;
+                        background-size: 100% 100%;
+                        background-repeat:  no-repeat;
+                        background-position:  top;">
+                                                </div>
+                                                <a class="video-play" href="https://vnuhcm.edu.vn/video/dai-hoc-quoc-gia-2019-rewind/323437386864.html" tabindex="0">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                                <div class="slide-caption video">
+                                                    <div class="text">
+                                                        <h3>
+                                                            <a href="https://vnuhcm.edu.vn/video/dai-hoc-quoc-gia-2019-rewind/323437386864.html" class="news-title-sm text-ellipsis" tabindex="0">
+                                                                Đại học Quốc gia 2019 - Rewind
+                                                            </a>
+                                                        </h3>
+                                                        <p class="dotdotdot ddd-truncated" style="overflow-wrap: break-word;"> Năm 2019, ĐHQG-HCM có những bước tiến rất đáng tự hào: Lần đầu tiên đứng trong Top 1000+ bảng xếp hạng… </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="item slick-slide" data-slick-index="1" aria-hidden="true" style="width: 470px;" tabindex="-1">
+                                            <div class="video-item">
+                                                <div class="image" style="background-image: url(https://static.vnuhcm.edu.vn/images/20190825/cbe0890f37b64480d66c8a5296215393.jpg);
+                        height: 380px;
+                        width: 100%;
+                        background-size: 100% 100%;
+                        background-repeat:  no-repeat;
+                        background-position:  top;">
+                                                </div>
+                                                <a class="video-play" href="https://vnuhcm.edu.vn/video/10-nam-quy-phat-trien-dhqg-hcm/323232356864.html" tabindex="-1">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                                <div class="slide-caption video">
+                                                    <div class="text">
+                                                        <h3>
+                                                            <a href="https://vnuhcm.edu.vn/video/10-nam-quy-phat-trien-dhqg-hcm/323232356864.html" class="news-title-sm text-ellipsis" tabindex="-1">
+                                                                10 năm Quỹ Phát triển ĐHQG-HCM
+                                                            </a>
+                                                        </h3>
+                                                        <p class="dotdotdot ddd-truncated" style="overflow-wrap: break-word;"> Chiều 26/7, tại Hội trường Thống Nhất, ĐHQG-HCM tổ chức Lễ Kỷ niệm 10 năm thành lập Quỹ phát triển… </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="item slick-slide" data-slick-index="2" aria-hidden="true" style="width: 470px;" tabindex="-1">
+                                            <div class="video-item">
+                                                <div class="image" style="background-image: url(https://static.vnuhcm.edu.vn/images/20190726/9517c16088706c69a15b47c14be65e7a.jpg);
+                        height: 380px;
+                        width: 100%;
+                        background-size: 100% 100%;
+                        background-repeat:  no-repeat;
+                        background-position:  top;">
+                                                </div>
+                                                <a class="video-play" href="https://vnuhcm.edu.vn/video/ha-tang-giao-thong-khu-vuc-nam-bo-van-de-va-giai-phap-phat-trien/323136316864.html" tabindex="-1">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                                <div class="slide-caption video">
+                                                    <div class="text">
+                                                        <h3>
+                                                            <a href="https://vnuhcm.edu.vn/video/ha-tang-giao-thong-khu-vuc-nam-bo-van-de-va-giai-phap-phat-trien/323136316864.html" class="news-title-sm text-ellipsis" tabindex="-1">
+                                                                Hạ tầng giao thông khu vực Nam bộ vấn đề và giải pháp phát triển
+                                                            </a>
+                                                        </h3>
+                                                        <p class="dotdotdot ddd-truncated" style="overflow-wrap: break-word;"> Ngày 29/6, ĐHQG-HCM và UBND TP.HCM tổ chức Hội thảo khoa học Hạ tầng giao thông khu vực Nam bộ vấn… </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="item slick-slide" data-slick-index="3" aria-hidden="true" style="width: 470px;" tabindex="-1">
+                                            <div class="video-item">
+                                                <div class="image" style="background-image: url(https://static.vnuhcm.edu.vn/images/20190426/cf7acaf7c62fa8080eb09c9cee8b2229.jpg);
+                        height: 380px;
+                        width: 100%;
+                        background-size: 100% 100%;
+                        background-repeat:  no-repeat;
+                        background-position:  top;">
+                                                </div>
+                                                <a class="video-play" href="https://vnuhcm.edu.vn/video/y-tuong-khoi-nghiep-2019/313939376864.html" tabindex="-1">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                                <div class="slide-caption video">
+                                                    <div class="text">
+                                                        <h3>
+                                                            <a href="https://vnuhcm.edu.vn/video/y-tuong-khoi-nghiep-2019/313939376864.html" class="news-title-sm text-ellipsis" tabindex="-1">
+                                                                Ý TƯỞNG KHỞI NGHIỆP 2019
+                                                            </a>
+                                                        </h3>
+                                                        <p class="dotdotdot ddd-truncated" style="overflow-wrap: break-word;"> Cuộc thi Ý tưởng khởi nghiệp CiC 2019 do Khu Công nghệ Phần mềm ĐHQG-HCM (ITP) phối hợp với Trường ĐH… </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="item slick-slide" data-slick-index="4" aria-hidden="true" style="width: 470px;" tabindex="-1">
+                                            <div class="video-item">
+                                                <div class="image" style="background-image: url(https://static.vnuhcm.edu.vn/images/20190423/4dcc1d9e2e7dad8116749a42424edce8.JPG);
+                        height: 380px;
+                        width: 100%;
+                        background-size: 100% 100%;
+                        background-repeat:  no-repeat;
+                        background-position:  top;">
+                                                </div>
+                                                <a class="video-play" href="https://vnuhcm.edu.vn/video/truong-dh-bach-khoa-tham-gia-du-an/313935306864.html" tabindex="-1">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                                <div class="slide-caption video">
+                                                    <div class="text">
+                                                        <h3>
+                                                            <a href="https://vnuhcm.edu.vn/video/truong-dh-bach-khoa-tham-gia-du-an/313935306864.html" class="news-title-sm text-ellipsis" tabindex="-1">
+                                                                Trường ĐH Bách Khoa tham gia dự án
+                                                            </a>
+                                                        </h3>
+                                                        <p class="dotdotdot ddd-truncated" style="overflow-wrap: break-word;"> Ngày 1/4, Trường ĐH Bách Khoa đã ký kết thỏa thuận hợp tác với Hội Bảo trợ bệnh nhân nghèo TP.HCM. Tham dự… </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="item slick-slide" data-slick-index="5" aria-hidden="true" style="width: 470px;" tabindex="-1">
+                                            <div class="video-item">
+                                                <div class="image" style="background-image: url(https://static.vnuhcm.edu.vn/images/20190403/7e9b00123f629dfb3d75295f6e06dddd.jpg);
+                        height: 380px;
+                        width: 100%;
+                        background-size: 100% 100%;
+                        background-repeat:  no-repeat;
+                        background-position:  top;">
+                                                </div>
+                                                <a class="video-play" href="https://vnuhcm.edu.vn/video/ky-thi-danh-gia-nang-luc-2019-dot-1/313932316864.html" tabindex="-1">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                                <div class="slide-caption video">
+                                                    <div class="text">
+                                                        <h3>
+                                                            <a href="https://vnuhcm.edu.vn/video/ky-thi-danh-gia-nang-luc-2019-dot-1/313932316864.html" class="news-title-sm text-ellipsis" tabindex="-1">
+                                                                Kỳ thi Đánh giá năng lực 2019 đợt 1
+                                                            </a>
+                                                        </h3>
+                                                        <p class="dotdotdot" style="overflow-wrap: break-word;"> Ngày 31/3, ĐHQG-HCM tổ chức kỳ thi Đánh giá năng lực đợt 1.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="item slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" style="width: 470px;" tabindex="-1">
+                                            <div class="video-item">
+                                                <div class="image" style="background-image: url(https://static.vnuhcm.edu.vn/images/20191227/90e4aae767848c51ad7b66bf3cab0a68.jpg);
+                        height: 380px;
+                        width: 100%;
+                        background-size: 100% 100%;
+                        background-repeat:  no-repeat;
+                        background-position:  top;">
+                                                </div>
+                                                <a class="video-play" href="https://vnuhcm.edu.vn/video/dai-hoc-quoc-gia-2019-rewind/323437386864.html" tabindex="-1">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                                <div class="slide-caption video">
+                                                    <div class="text">
+                                                        <h3>
+                                                            <a href="https://vnuhcm.edu.vn/video/dai-hoc-quoc-gia-2019-rewind/323437386864.html" class="news-title-sm text-ellipsis" tabindex="-1">
+                                                                Đại học Quốc gia 2019 - Rewind
+                                                            </a>
+                                                        </h3>
+                                                        <p class="dotdotdot ddd-truncated" style="overflow-wrap: break-word;"> Năm 2019, ĐHQG-HCM có những bước tiến rất đáng tự hào: Lần đầu tiên đứng trong Top 1000+ bảng xếp hạng… </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="item slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" style="width: 470px;" tabindex="-1">
+                                            <div class="video-item">
+                                                <div class="image" style="background-image: url(https://static.vnuhcm.edu.vn/images/20190825/cbe0890f37b64480d66c8a5296215393.jpg);
+                        height: 380px;
+                        width: 100%;
+                        background-size: 100% 100%;
+                        background-repeat:  no-repeat;
+                        background-position:  top;">
+                                                </div>
+                                                <a class="video-play" href="https://vnuhcm.edu.vn/video/10-nam-quy-phat-trien-dhqg-hcm/323232356864.html" tabindex="-1">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                                <div class="slide-caption video">
+                                                    <div class="text">
+                                                        <h3>
+                                                            <a href="https://vnuhcm.edu.vn/video/10-nam-quy-phat-trien-dhqg-hcm/323232356864.html" class="news-title-sm text-ellipsis" tabindex="-1">
+                                                                10 năm Quỹ Phát triển ĐHQG-HCM
+                                                            </a>
+                                                        </h3>
+                                                        <p class="dotdotdot ddd-truncated" style="overflow-wrap: break-word;"> Chiều 26/7, tại Hội trường Thống Nhất, ĐHQG-HCM tổ chức Lễ Kỷ niệm 10 năm thành lập Quỹ phát triển… </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="item slick-slide slick-cloned" data-slick-index="8" aria-hidden="true" style="width: 470px;" tabindex="-1">
+                                            <div class="video-item">
+                                                <div class="image" style="background-image: url(https://static.vnuhcm.edu.vn/images/20190726/9517c16088706c69a15b47c14be65e7a.jpg);
+                        height: 380px;
+                        width: 100%;
+                        background-size: 100% 100%;
+                        background-repeat:  no-repeat;
+                        background-position:  top;">
+                                                </div>
+                                                <a class="video-play" href="https://vnuhcm.edu.vn/video/ha-tang-giao-thong-khu-vuc-nam-bo-van-de-va-giai-phap-phat-trien/323136316864.html" tabindex="-1">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                                <div class="slide-caption video">
+                                                    <div class="text">
+                                                        <h3>
+                                                            <a href="https://vnuhcm.edu.vn/video/ha-tang-giao-thong-khu-vuc-nam-bo-van-de-va-giai-phap-phat-trien/323136316864.html" class="news-title-sm text-ellipsis" tabindex="-1">
+                                                                Hạ tầng giao thông khu vực Nam bộ vấn đề và giải pháp phát triển
+                                                            </a>
+                                                        </h3>
+                                                        <p class="dotdotdot ddd-truncated" style="overflow-wrap: break-word;"> Ngày 29/6, ĐHQG-HCM và UBND TP.HCM tổ chức Hội thảo khoa học Hạ tầng giao thông khu vực Nam bộ vấn… </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="item slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" style="width: 470px;" tabindex="-1">
+                                            <div class="video-item">
+                                                <div class="image" style="background-image: url(https://static.vnuhcm.edu.vn/images/20190426/cf7acaf7c62fa8080eb09c9cee8b2229.jpg);
+                        height: 380px;
+                        width: 100%;
+                        background-size: 100% 100%;
+                        background-repeat:  no-repeat;
+                        background-position:  top;">
+                                                </div>
+                                                <a class="video-play" href="https://vnuhcm.edu.vn/video/y-tuong-khoi-nghiep-2019/313939376864.html" tabindex="-1">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                                <div class="slide-caption video">
+                                                    <div class="text">
+                                                        <h3>
+                                                            <a href="https://vnuhcm.edu.vn/video/y-tuong-khoi-nghiep-2019/313939376864.html" class="news-title-sm text-ellipsis" tabindex="-1">
+                                                                Ý TƯỞNG KHỞI NGHIỆP 2019
+                                                            </a>
+                                                        </h3>
+                                                        <p class="dotdotdot ddd-truncated" style="overflow-wrap: break-word;"> Cuộc thi Ý tưởng khởi nghiệp CiC 2019 do Khu Công nghệ Phần mềm ĐHQG-HCM (ITP) phối hợp với Trường ĐH… </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="item slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" style="width: 470px;" tabindex="-1">
+                                            <div class="video-item">
+                                                <div class="image" style="background-image: url(https://static.vnuhcm.edu.vn/images/20190423/4dcc1d9e2e7dad8116749a42424edce8.JPG);
+                        height: 380px;
+                        width: 100%;
+                        background-size: 100% 100%;
+                        background-repeat:  no-repeat;
+                        background-position:  top;">
+                                                </div>
+                                                <a class="video-play" href="https://vnuhcm.edu.vn/video/truong-dh-bach-khoa-tham-gia-du-an/313935306864.html" tabindex="-1">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                                <div class="slide-caption video">
+                                                    <div class="text">
+                                                        <h3>
+                                                            <a href="https://vnuhcm.edu.vn/video/truong-dh-bach-khoa-tham-gia-du-an/313935306864.html" class="news-title-sm text-ellipsis" tabindex="-1">
+                                                                Trường ĐH Bách Khoa tham gia dự án
+                                                            </a>
+                                                        </h3>
+                                                        <p class="dotdotdot ddd-truncated" style="overflow-wrap: break-word;"> Ngày 1/4, Trường ĐH Bách Khoa đã ký kết thỏa thuận hợp tác với Hội Bảo trợ bệnh nhân nghèo TP.HCM. Tham dự… </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="item slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" style="width: 470px;" tabindex="-1">
+                                            <div class="video-item">
+                                                <div class="image" style="background-image: url(https://static.vnuhcm.edu.vn/images/20190403/7e9b00123f629dfb3d75295f6e06dddd.jpg);
+                        height: 380px;
+                        width: 100%;
+                        background-size: 100% 100%;
+                        background-repeat:  no-repeat;
+                        background-position:  top;">
+                                                </div>
+                                                <a class="video-play" href="https://vnuhcm.edu.vn/video/ky-thi-danh-gia-nang-luc-2019-dot-1/313932316864.html" tabindex="-1">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                                <div class="slide-caption video">
+                                                    <div class="text">
+                                                        <h3>
+                                                            <a href="https://vnuhcm.edu.vn/video/ky-thi-danh-gia-nang-luc-2019-dot-1/313932316864.html" class="news-title-sm text-ellipsis" tabindex="-1">
+                                                                Kỳ thi Đánh giá năng lực 2019 đợt 1
+                                                            </a>
+                                                        </h3>
+                                                        <p class="dotdotdot" style="overflow-wrap: break-word;"> Ngày 31/3, ĐHQG-HCM tổ chức kỳ thi Đánh giá năng lực đợt 1.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>
+                            </div>
+                            <a class="btn btn-link btn__angle" href="/video"> Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="student-activity">
+            <div class="container">
+                <div class="section__title">
+                    <h2>Hoạt động sinh viên</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 mb-1 mb-lg-0">
+                        <style>
+    @media (max-width: 1360px) {
+        .admission-information figure img.scale-img{
+            height: 17.4em !important;
+        }
+    }
+    @media (max-width: 414px) {
+        .admission-information figure img.scale-img{
+            height: 12.4em !important;
+        }
+    }
+                        </style>
+                        <div class="admission-information wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                            <h3 class="title-box">Câu lạc bộ và cộng đồng</h3>
+                            <figure class="figure-img effect-scale mb-0">
+                                <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/-doi-phan-ung-nhanh-tinh-nguyen-don-dep-ky-tuc-xa-dhqg-hcm/323633346864.html">
+                                    <div class="" style="background-image: url(https://static.vnuhcm.edu.vn/images/20200321/366ebdcd0ffcc0b60dcbba096c500686.JPG);
+                        height: 342px;
+                        width: 100%;
+                        background-size: cover;
+                        background-repeat:  no-repeat;
+                        background-position:  top;" data-height="394">
+                                    </div>
+                                </a>
+                            </figure>
+
+                            <div class="block-content">
+                                <h4><a href="https://vnuhcm.edu.vn/tin-tuc_32346864/-doi-phan-ung-nhanh-tinh-nguyen-don-dep-ky-tuc-xa-dhqg-hcm/323633346864.html" class="crop-text-1"> “Đội phản ứng nhanh” tình nguyện dọn dẹp Ký túc xá ĐHQG-HCM</a></h4>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-chevron-circle-right"></i><a href="https://vnuhcm.edu.vn/sinh-vien_33386864/tu-the-colosseum-den-quan-quan-truong-teen-2019/323535376864.html" class="crop-text-1">Từ The Colosseum đến Quán quân Trường Teen 2019</a></li>
+                                    <li><i class="fa fa-chevron-circle-right"></i><a href="https://vnuhcm.edu.vn/sinh-vien_33386864/an-tet-xa-nha/323534376864.html" class="crop-text-1">Ăn Tết xa nhà</a></li>
+                                    <li><i class="fa fa-chevron-circle-right"></i><a href="https://vnuhcm.edu.vn/sinh-vien_33386864/truong-dh-an-giang-tuyen-duong-66-sinh-vien-5-tot/323531376864.html" class="crop-text-1">Trường ĐH An Giang tuyên dương 66 sinh viên 5 tốt</a></li>
+                                    <li><i class="fa fa-chevron-circle-right"></i><a href="https://vnuhcm.edu.vn/sinh-vien_33386864/dhqg-hcm-to-chuc-giai-bong-da-sinh-vien-chuyen-nghiep/323531366864.html" class="crop-text-1">ĐHQG-HCM tổ chức giải bóng đá sinh viên chuyên nghiệp</a></li>
+                                    <li><i class="fa fa-chevron-circle-right"></i><a href="https://vnuhcm.edu.vn/sinh-vien_33386864/sinh-vien-viet-nhac-tu-tac-pham-van-hoc/323430386864.html" class="crop-text-1">Sinh viên viết nhạc từ tác phẩm văn học</a></li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="gallery wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                            <h3 class="title-box">Thư viện hình ảnh</h3>
+                            <div class="list-photo masonry" style="position: relative; height: 567px;">
+
+                                <div class="photo-thumnail" style="position: absolute; left: 0%; top: 0px;">
+                                    <div class="photo-item">
+                                        <div class="figure-img effect-scale mb-0">
+                                            <a class="photo-lightbox showbox" href="https://static.vnuhcm.edu.vn/images/20190930/6d237101db815f0d86a27b522196a0f4.JPG" data-link="[{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%209\/IMG_0563%20-%20Copy%20-%20Copy.JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%209\/IMG_0637.JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%209\/IMG_0627.JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%209\/khanhthanhcongtrinhsinhvien.JPG&quot;}]">
+                                                <img class="scale-img" src="https://static.vnuhcm.edu.vn/images/20190930/6d237101db815f0d86a27b522196a0f4.JPG" width="210" height="100" alt="Image">
+                                                <div class="bg-overlay">
+                                                    <h4 class="photo-title">Lễ khánh thành Không gian truyền thống phong trào học sinh, sinh viên Sài Gòn - Gia Định - TP. Hồ Chí Minh</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="photo-thumnail" style="position: absolute; left: 50%; top: 0px;">
+                                    <div class="photo-item">
+                                        <div class="figure-img effect-scale mb-0">
+                                            <a class="photo-lightbox showbox" href="https://static.vnuhcm.edu.vn/images/20190517/8ad5e17cc6e65bfc7cb0f6edd7dc32cd.JPG" data-link="[{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/IMG_0513.JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/van%20nghe.JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/IMG_0866.JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/IMG_1063.JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/IMG_0887.JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/IMG_0983%20-%20Copy.JPG&quot;}]">
+                                                <img class="scale-img" src="https://static.vnuhcm.edu.vn/images/20190517/8ad5e17cc6e65bfc7cb0f6edd7dc32cd.JPG" width="210" height="100" alt="Image">
+                                                <div class="bg-overlay">
+                                                    <h4 class="photo-title">HỘI THI VĂN NGHỆ CBVC-LĐ ĐHQG-HCM 2019</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="photo-thumnail" style="position: absolute; left: 0%; top: 189px;">
+                                    <div class="photo-item">
+                                        <div class="figure-img effect-scale mb-0">
+                                            <a class="photo-lightbox showbox" href="https://static.vnuhcm.edu.vn/images/20190508/9a7877990f3b9416b60fc15603fd9da4.JPG" data-link="[{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/Album%20anh%20Hoi%20nghi%20HT%20%288%29.JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/Album%20anh%20Hoi%20nghi%20HT%20(5).JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/Album%20anh%20Hoi%20nghi%20HT%20(4).JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/Album%20anh%20Hoi%20nghi%20HT%20(3).JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/Album%20anh%20Hoi%20nghi%20HT%20(2).JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/Album%20anh%20Hoi%20nghi%20HT%20(9).JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/Album%20anh%20Hoi%20nghi%20HT%20(11).JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/Album%20anh%20Hoi%20nghi%20HT%20(13).JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/_MG_3788.JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/Album%20anh%20Hoi%20nghi%20HT%20(17).JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/IMG_1175.JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/Album%20anh%20Hoi%20nghi%20HT%20(17).JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/IMG_1233.JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/Album%20anh%20Hoi%20nghi%20HT%20(16).JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/Album%20anh%20Hoi%20nghi%20HT%20(15).JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%205\/Album%20anh%20Hoi%20nghi%20HT%20(1).JPG&quot;}]">
+                                                <img class="scale-img" src="https://static.vnuhcm.edu.vn/images/20190508/9a7877990f3b9416b60fc15603fd9da4.JPG" width="210" height="100" alt="Image">
+                                                <div class="bg-overlay">
+                                                    <h4 class="photo-title">Hội nghị hiệu trưởng Confrasie lần thứ XIII</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="photo-thumnail" style="position: absolute; left: 50%; top: 189px;">
+                                    <div class="photo-item">
+                                        <div class="figure-img effect-scale mb-0">
+                                            <a class="photo-lightbox showbox" href="https://static.vnuhcm.edu.vn/images/20190401/6bb59fd9230c73f9440b2fe6703f96e3.jpg" data-link="[{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%203\/DGNL2.jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%203\/thi%20nang%20lucccc%20(4).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%203\/thi%20nang%20lucccc%20(7).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%203\/DGNL3.jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%203\/thi%20nang%20lucccc%20(5).jpg&quot;}]">
+                                                <img class="scale-img" src="https://static.vnuhcm.edu.vn/images/20190401/6bb59fd9230c73f9440b2fe6703f96e3.jpg" width="210" height="100" alt="Image">
+                                                <div class="bg-overlay">
+                                                    <h4 class="photo-title">Kỳ thi Đánh giá năng lực 2019 đợt 1</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="photo-thumnail" style="position: absolute; left: 0%; top: 378px;">
+                                    <div class="photo-item">
+                                        <div class="figure-img effect-scale mb-0">
+                                            <a class="photo-lightbox showbox" href="https://static.vnuhcm.edu.vn/images/20190325/73120f84e83ac1f7e3c6b17581180585.JPG" data-link="[{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/H%C3%ACnh%20campus%20VNU\/IMG_0243%20(2).JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/H%C3%ACnh%20campus%20VNU\/2%20-%20Do%20thi%20xanh.jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/H%C3%ACnh%20campus%20VNU\/2-%20Duong%20vao%20Ky%20tuc.jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/H%C3%ACnh%20campus%20VNU\/9%20Phoi%20canh%20truong%20dai%20hoc%20cong%20nghe%20thong%20tin.jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/H%C3%ACnh%20campus%20VNU\/9%20Trung%20tam%20cong%20nghe%20phan%20mem%20-%20GIAI%20BA.jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/H%C3%ACnh%20campus%20VNU\/15%20Khung%20troi%20hoc%20tap%20-%20GIAI%20NHI.jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/H%C3%ACnh%20campus%20VNU\/16%20Th%E1%BA%BF%20h%E1%BB%87%20tr%E1%BA%BB%20-%20GIAI%20NHI.JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/H%C3%ACnh%20campus%20VNU\/IMG_0240%20(2).JPG&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/H%C3%ACnh%20campus%20VNU\/IMG_0270%20(2).JPG&quot;}]">
+                                                <img class="scale-img" src="https://static.vnuhcm.edu.vn/images/20190325/73120f84e83ac1f7e3c6b17581180585.JPG" width="210" height="100" alt="Image">
+                                                <div class="bg-overlay">
+                                                    <h4 class="photo-title">Campus ĐHQG-HCM</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="photo-thumnail" style="position: absolute; left: 50%; top: 378px;">
+                                    <div class="photo-item">
+                                        <div class="figure-img effect-scale mb-0">
+                                            <a class="photo-lightbox showbox" href="https://static.vnuhcm.edu.vn/images/20190110/f79e340c8ff5b6b496e66dd8ba98d78c.jpg" data-link="[{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(1).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(2).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(3).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(4).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(5).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(6).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(7).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(8).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(9).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(10).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(11).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(12).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(13).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(15).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(21).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(30).jpg&quot;},{&quot;src&quot;:&quot;https:\/\/static.vnuhcm.edu.vn\/images\/0%20Phong%204T\/2019\/Thang%201\/H%C3%ACnh%20VNU%20(34).JPG&quot;}]">
+                                                <img class="scale-img" src="https://static.vnuhcm.edu.vn/images/20190110/f79e340c8ff5b6b496e66dd8ba98d78c.jpg" width="210" height="100" alt="Image">
+                                                <div class="bg-overlay">
+                                                    <h4 class="photo-title">Sinh viên ĐHQG-HCM nghiên cứu, học tập, sinh hoạt</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal fade modal-register" id="contactModalForm" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Liên hệ</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span></span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body" style="padding: 0">
+                        <style>
+                            .form-control.error {
+                                border-color: #a94442;
+                                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                            }
+
+                            label.error {
+                                color: #a94442;
+                            }
+                        </style>
+                        <div class="form-register">
+                            <form class="contact-form" action="" enctype="multipart/form-data" method="post" id="form-horizontal">
+                                <div id="first" class="row form-group align-items-center">
+                                    <label class="col-sm-4">Họ và tên</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" name="name" id="fullname" placeholder="Họ và tên" required="" type="text">
+                                        <label id="fullname_error" style="display: none" class="error" for="captcha">Vui lòng nhập họ tên</label>
+                                    </div>
+                                </div>
+                                <div class="row form-group align-items-center">
+                                    <label class="col-sm-4">E-mail</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="email" name="email" id="emailFrom" placeholder="E-mail" required="">
+                                        <label id="email_error" style="display: none" class="error" for="captcha">Vui lòng nhập E-mail</label>
+                                    </div>
+                                </div>
+                                <div class="row form-group align-items-center">
+                                    <label class="col-sm-4">Số điện thoại</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="text" id="phoneFrom" name="phone" placeholder="Số điện thoại" required="">
+                                        <label id="phone_error" style="display: none" class="error" for="captcha">Vui lòng nhập số điện thoại</label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="row form-group align-items-center">
+                                    <label class="col-sm-4">Phòng ban</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control" name="unit" id="unit" required="">
+                                            <option value="1">Văn phòng</option>
+                                            <option value="2">Ban Tổ chức - Cán bộ</option>
+                                            <option value="3">Ban Đại học</option>
+                                            <option value="4">Ban Sau đại học</option>
+                                            <option value="5">Ban Kế hoạch - Tài chính</option>
+                                            <option value="6">Ban Khoa học Công nghệ</option>
+                                            <option value="7">Ban Quan hệ đối ngoại</option>
+                                            <option value="8">Ban Công tác Sinh viên</option>
+                                            <option value="9">Ban Thanh tra - Pháp chế</option>
+                                            <option value="10">Ban Thi đua - Khen thưởng</option>
+                                            <option value="11">Ban Quản lý Dự án</option>
+                                        </select>
+                                        <label id="unit_error" style="display: none" class="error" for="captcha">Vui lòng chọn phòng ban</label>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label class="col-sm-4">Nội dung</label>
+                                    <div class="col-sm-8">
+                                        <textarea class="form-control" name="content" id="content" placeholder="Nội dung" rows="5" required=""></textarea>
+                                        <label id="content_error" style="display: none" class="error" for="captcha">Vui lòng chọn nội dung</label>
+                                    </div>
+                                </div>
+                                <input type="hidden" id="process" value="Đang xử lý...">
+                                <div class="text-right">
+                                    <button class="btn btn-blue text-uppercase" type="button" id="sendContact">Gửi</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social-fixed">
+            <a href="tel: (+84-28) 37 242 181"><i class="fa fa-phone"></i></a>
+            <a href="#" id="contactModalButton"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.facebook.com/vnuhcm.info/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCw27okE0h0znMeG2U-FHTxg" target="_blank"><i class="fa fa-youtube"></i></a>
+        </div>
+    </main>
+    
+</div>

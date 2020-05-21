@@ -1,0 +1,136 @@
+﻿@model IEnumerable<ProjectUEF.Models.CongTrinhKhoaHoc>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout - Client.cshtml";
+}
+<div class="table-responsive">
+    <table class="table align-items-center table-flush">
+        <thead class="thead-light">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.TenSanPhamVN)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TenSanPhamEN)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TenTacGiaVN)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TenTacGiaEN)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TenTapChiVN)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TenTapChiEN)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SoHieuISSN)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nam)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MinhChung)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.GhiChu)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.isDuyet)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NgayDuyet)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NguoiDuyet)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NgayTao)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NgayCapNhat)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LoaiCongTrinhKhoaHoc.TenLoaiCongTrinhKhoaHoc)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LoaiCongTrinhKhoaHoc1.TenLoaiCongTrinhKhoaHoc)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LyLichKhoaHoc.MaQuanLy)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenSanPhamVN)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenSanPhamEN)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenTacGiaVN)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenTacGiaEN)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenTapChiVN)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenTapChiEN)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SoHieuISSN)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nam)
+                    </td>
+                    <td>
+                        <img src="@item.MinhChung" width="200" height="200">
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GhiChu)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.isDuyet)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayDuyet)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NguoiDuyet)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayTao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayCapNhat)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LoaiCongTrinhKhoaHoc.TenLoaiCongTrinhKhoaHoc)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LoaiCongTrinhKhoaHoc1.TenLoaiCongTrinhKhoaHoc)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LyLichKhoaHoc.MaQuanLy)
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+       
+    </table>
+</div>
+

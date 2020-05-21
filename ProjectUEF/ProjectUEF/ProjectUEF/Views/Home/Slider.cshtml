@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ProjectUEF.Models.Slider>
+
+<section class="section section__slide slick-initialized slick-slider slick-dotted">
+    <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+    <div class="slick-list draggable">
+        @foreach (var item in Model)
+        {
+            <div class="slick-track" style="opacity: 1; width: 16731px; transform: translate3d(-7436px, 0px, 0px);">
+                <div class="item slide-bg-img overlay slick-slide slick-cloned" style="background-image: url(&quot;@item.HinhAnh;); width: 1859px;" data-slick-index="-1" aria-hidden="true" tabindex="-1">
+                        <div class="slide-overlay">
+                            <div class="container">
+                                <div class="slide-caption">
+                                    <a href=" https://vnuhcm.edu.vn/tin-tuc_32346864/dhqg-hcm-ky-11-thoa-thuan-hop-tac-voi-uc-va-new-zealand/313839306864.html" tabindex="-1">
+                                        <h2>@item.TieuDe</h2>
+                                    </a>
+                                    <p class="dotdotdot" style="overflow-wrap: break-word;">ĐHQG-HCM đã ký kết 11 thỏa thuận hợp tác giữa các đơn vị&nbsp;thành viên ĐHQG-HCM với các đối tác Úc và New Zealand làm tiền đề triển khai các&nbsp;hợp tác trong tương lai. &nbsp;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="item slide-bg-img overlay slick-slide" style="background-image: url(&quot;@item.HinhAnh;); width: 1859px;" data-slick-index="0" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
+                    <div class="slide-overlay">
+                        <div class="container">
+                            <div class="slide-caption">
+                                <a href="https://vnuhcm.edu.vn/tin-tuc_32346864/dhqg-hcm-dung-trong-top-1001-tren-bang-xep-hang-the/323237326864.html" tabindex="-1">
+                                    <h2>@item.TieuDe</h2>
+                                </a>
+                                <p class="dotdotdot" style="overflow-wrap: break-word;"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+
+
+
+    <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 4" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 4" tabindex="-1">2</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 4" tabindex="-1">3</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 4" tabindex="0" aria-selected="true">4</button></li></ul>
+</section>

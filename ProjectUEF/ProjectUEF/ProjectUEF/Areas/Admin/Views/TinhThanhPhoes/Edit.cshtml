@@ -1,0 +1,45 @@
+﻿@model ProjectUEF.Models.TinhThanhPho
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout - Admin.cshtml";
+}
+
+<center>
+    <h2>Edit</h2>
+</center>
+
+
+@using (Html.BeginForm("Edit", "TinhThanhPhoes", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <form>
+                <div class="form-horizontal">
+                    <h4>TinhThanhPho</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.ID)
+
+                    <div class="form-group row">
+                        @Html.LabelFor(model => model.TenTinhThanhPho, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.TenTinhThanhPho, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.TenTinhThanhPho, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Save" class="btn btn-outline-primary" />
+                            <a href="/Admin/TinhThanhPhoes/Index" class="btn btn-outline-primary">Hủy</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+}

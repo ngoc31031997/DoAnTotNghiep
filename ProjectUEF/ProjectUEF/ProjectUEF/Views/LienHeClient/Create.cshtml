@@ -1,0 +1,89 @@
+﻿@model ProjectUEF.Models.LienHe
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout - Client.cshtml";
+}
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    <main id="main-content">
+
+        <div class="page-inner-2">
+            <section class="contact-page">
+                <div class="container">
+                    <div class="section__title mb-16">
+                        <h2>Liên hệ</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 mb-3 mb-lg-0">
+                            <form class="contact-form" action="/lien-he" enctype="multipart/form-data" method="post" id="form-horizontal" novalidate="novalidate">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.HoVaTen, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.HoVaTen, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.HoVaTen, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.SDT, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.SDT, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.SDT, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.KhoaID, "KhoaID", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.DropDownList("KhoaID", null, htmlAttributes: new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.KhoaID, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.NoiDung, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.NoiDung, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.NoiDung, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.ThongTin, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.ThongTin, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.ThongTin, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <input type="submit" value="Send" class="btn btn-default" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <div class="contact-info">
+                                <h3>Đại học Công Nghệ TP. HỒ CHÍ MINH - HUTECH</h3>
+                                <p>475A Điện Biên Phủ, P.25, Q.Bình Thạnh, TP.HCM</p>
+                                <p>Số điện thoại:  (028) 5445 7777 </p>
+                                <p> Fax: (028) 5445 4444 - Email: hutech@hutech.edu.vn</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    
+}
+    

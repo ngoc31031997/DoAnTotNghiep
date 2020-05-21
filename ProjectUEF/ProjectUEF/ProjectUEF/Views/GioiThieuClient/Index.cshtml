@@ -1,0 +1,54 @@
+﻿@model ProjectUEF.Models.GioiThieu 
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout - Client.cshtml";
+}
+
+<main id="main-content">
+    <div class="sub-banner" style="background-image:url('/img/banner/subbanner-event-research.jpg')">
+        <div class="text text-center">
+            <h2 class="page-title" style="color:black"  >Về HUTECH</h2>
+            <p class="sub-title" style="color:black" >@Model.TieuDe</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tabcontrols students">
+            <div class="tab-content pt-0">
+                <div class="tab-pane fade show active" role="tabpanel" style="">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="introduction">
+                                <article class="entry wow fadeInUp" style="    width: 100%;">
+                                    <header class="mb-3">
+                                        <h1 class="entry-title">Lời giới thiệu</h1>
+                                        <div class="meta">
+                                            <li>
+                                                <i class="fa fa-clock-o"></i> @Model.NgayTao
+                                            </li>
+                                        </div>
+                                    </header>
+                                    <div class="entry-content">
+                                        <p style="text-align:justify; margin:0in 0in 10pt"><span style="font-size:16px;">
+                                            <span style="font-family:Arial,Helvetica,sans-serif;">
+                                            <span style="line-height:115%">
+                                                <span style="line-height:115%">
+                                                <span style="color:black"> @Html.Raw(Model.NoiDung)</span>
+                                                    </span>
+                                                </span>
+                                                </span>
+                                                </span>
+                                        </p>
+
+
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- e: tab-content -->
+        </div>
+        <!-- e: tabcontrols -->
+    </div>
+</main>

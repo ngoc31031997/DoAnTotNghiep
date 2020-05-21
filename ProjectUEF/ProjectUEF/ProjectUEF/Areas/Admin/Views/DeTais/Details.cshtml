@@ -1,0 +1,35 @@
+﻿@model ProjectUEF.Models.DeTai
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout - Admin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DeTai</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenDeTai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenDeTai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CapDoDeTaiID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CapDoDeTaiID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,205 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="~/Content/Admin/img/logo/logo.png" rel="icon">
+    <title>RuangAdmin - Dashboard</title>
+    <link href="~/Content/Admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/Admin/css/ruang-admin.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/Admin/Default/">
+                <div class="sidebar-brand-icon">
+
+                    <img src="~/Content/Admin/img/logo/logohutech.jpg" />
+                </div>
+                <div class="sidebar-brand-text mx-3">HUTECH ADMIN</div>
+            </a>
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/Admin/Default/">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Trang chủ</span>
+                </a>
+            </li>
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                Quản lý
+            </div>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
+                   aria-expanded="true" aria-controls="collapseBootstrap">
+                    <i class="far fa-fw fa-window-maximize"></i>
+                    <span>Quản trị</span>
+                </a>
+                <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Quản trị</h6>
+                        <a class="collapse-item" href="/Admin/BaiBaos">Bài Báo</a>
+                        <a class="collapse-item" href="/Admin/CapDoDeTais">Cấp Độ Đề Tài</a>
+                        <a class="collapse-item" href="/Admin/CongTrinhKhoaHocs">Công Trình Khoa Học</a>
+                        <a class="collapse-item" href="/Admin/DanhMucBaiBaos">Danh Mục Bài Báo</a>
+                        <a class="collapse-item" href="/Admin/DanhMucTinTucs">Danh Mục Tin Tức</a>
+                        <a class="collapse-item" href="/Admin/DeTais">Đề Tài</a>
+                        <a class="collapse-item" href="/Admin/GioiThieux">Giới Thiệu</a>
+                        <a class="collapse-item" href="/Admin/Khoas">Khoa</a>
+                        <a class="collapse-item" href="/Admin/LienHes">Liên hệ</a>
+                        <a class="collapse-item" href="/Admin/LoaiCongTrinhKhoaHocs">Loại Công Trình Khoa Học</a>
+                        <a class="collapse-item" href="/Admin/LoaiNghienCuus">Loại Nghiên Cứu</a>
+                        <a class="collapse-item" href="/Admin/LyLichKhoaHocs">Lý Lịch Khoa Học</a>
+                        <a class="collapse-item" href="/Admin/Sliders">Sliders</a>
+                        <a class="collapse-item" href="/Admin/TinhThanhPhoes">Tình Thành Phố</a>
+                        <a class="collapse-item" href="/Admin/TinTucs">Tin Tức</a>
+                        <a class="collapse-item" href="/Admin/ToChucChuTris">Tổ Chức Chủ Trì</a>
+                        <a class="collapse-item" href="/Admin/Users">User</a>
+                        <a class="collapse-item" href="/Admin/VaiTroes">Vai Trò</a>
+                    </div>
+                </div>
+            </li>
+            @*<li class="nav-item">
+            <a class="nav-link" href="forms.html">
+                <i class="fab fa-fw fa-wpforms"></i>
+                <span>Forms</span>
+            </a>
+        </li>*@
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true"
+                   aria-controls="collapseTable">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Thêm mới</span>
+                </a>
+                <div id="collapseTable" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Thêm mơis</h6>
+                        <a class="collapse-item" href="/Admin/BaiBaos/Create">Bài Báo</a>
+                        <a class="collapse-item" href="/Admin/CapDoDeTais/Create">Cấp Độ Đề Tài</a>
+                        <a class="collapse-item" href="/Admin/CongTrinhKhoaHocs/Create">Công Trình Khoa Học</a>
+                        <a class="collapse-item" href="/Admin/DanhMucBaiBaos/Create">Danh Mục Bài Báo</a>
+                        <a class="collapse-item" href="/Admin/DanhMucTinTucs/Create">Danh Mục Tin Tức</a>
+                        <a class="collapse-item" href="/Admin/DeTais/Create">Đề Tài</a>
+                        <a class="collapse-item" href="/Admin/GioiThieux/Create">Giới Thiệu</a>
+                        <a class="collapse-item" href="/Admin/Khoas/Create">Khoa</a>
+                        <a class="collapse-item" href="/Admin/LienHes/Create">Liên hệ</a>
+                        <a class="collapse-item" href="/Admin/LoaiCongTrinhKhoaHocs/Create">Loại Công Trình Khoa Học</a>
+                        <a class="collapse-item" href="/Admin/LoaiNghienCuus/Create">Loại Nghiên Cứu</a>
+                        <a class="collapse-item" href="/Admin/LyLichKhoaHocs/Create">Lý Lịch Khoa Học</a>
+                        <a class="collapse-item" href="/Admin/Sliders/Create">Sliders</a>
+                        <a class="collapse-item" href="/Admin/TinhThanhPhoes/Create">Tình Thành Phố</a>
+                        <a class="collapse-item" href="/Admin/TinTucs/Create">Tin Tức</a>
+                        <a class="collapse-item" href="/Admin/ToChucChuTris/Create">Tổ Chức Chủ Trì</a>
+                        <a class="collapse-item" href="/Admin/Users/Create">User</a>
+                        <a class="collapse-item" href="/Admin/VaiTroes/Create">Vai Trò</a>
+                    </div>
+                </div>
+            </li>
+            @*<li class="nav-item">
+            <a class="nav-link" href="ui-colors.html">
+                <i class="fas fa-fw fa-palette"></i>
+                <span>UI Colors</span>
+            </a>
+        </li>*@
+            @*<hr class="sidebar-divider">
+        <div class="sidebar-heading">
+            Examples
+        </div>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage" aria-expanded="true"
+               aria-controls="collapsePage">
+                <i class="fas fa-fw fa-columns"></i>
+                <span>Pages</span>
+            </a>
+            <div id="collapsePage" class="collapse" aria-labelledby="headingPage" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Example Pages</h6>
+                    <a class="collapse-item" href="login.html">Login</a>
+                    <a class="collapse-item" href="register.html">Register</a>
+                    <a class="collapse-item" href="404.html">404 Page</a>
+                    <a class="collapse-item" href="blank.html">Blank Page</a>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="charts.html">
+                <i class="fas fa-fw fa-chart-area"></i>
+                <span>Charts</span>
+            </a>
+        </li>
+        <hr class="sidebar-divider">
+        <div class="version" id="version-ruangadmin"></div>*@
+        </ul>
+        <!-- Sidebar -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <!-- TopBar -->
+                <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+                    <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                 aria-labelledby="searchDropdown">
+                                <form class="navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-1 small" placeholder="What do you want to look for?"
+                                               aria-label="Search" aria-describedby="basic-addon2" style="border-color: #3f51b5;">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Topbar -->
+                <!-- Container Fluid-->
+                <!---Container Fluid-->
+                @RenderBody()
+            </div>
+            
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>
+                            Hutech Admin
+                        </span>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer -->
+        </div>
+    </div>
+
+    <!-- Scroll to top -->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <script src="~/Content/Admin/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Content/Admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/Admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="~/Content/Admin/js/ruang-admin.min.js"></script>
+    <script src="~/Content/Admin/vendor/chart.js/Chart.min.js"></script>
+    <script src="~/Content/Admin/js/demo/chart-area-demo.js"></script>
+</body>
+
+</html>

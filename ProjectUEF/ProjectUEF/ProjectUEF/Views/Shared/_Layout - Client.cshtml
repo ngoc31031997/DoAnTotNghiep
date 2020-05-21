@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Đại học Công Nghệ Thành Phố Hồ Chí Minh- HUTECH</title>
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Đại học Công Nghệ Thành Phố Hồ Chí Minh- HUTECH" />
+    <meta property="og:description" content="Đại học Công Nghệ Thành Phố Hồ Chí Minh- HUTECH" />
+    <meta property="og:url" content="https://vnuhcm.edu.vn/" />
+    <meta property="og:site_name" content="Đại học Quốc gia TP.HCM" />
+    <meta property="og:image" content="https://static.vnuhcm.edu.vn/assets/img/defaultnews.jpg" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://vnuhcm.edu.vn/styles/fonts_google.css" rel="stylesheet" type="text/css">
+    <script src="https://vnuhcm.edu.vn/scripts/client_apis_google.js" gapi_processed="true"></script>
+    <!-- Place favicon.ico in the root directory-->
+    <link rel="stylesheet" href="https://vnuhcm.edu.vn/styles/font_roboto.css">
+    <link rel="stylesheet" href="https://vnuhcm.edu.vn/styles/font_roboto_condensed.css">
+    <link rel="stylesheet" href="https://vnuhcm.edu.vn/styles/vendor.css?v=1.8">
+    <link rel="stylesheet" href="https://vnuhcm.edu.vn/styles/main.css?v=8.9">
+    <link rel="stylesheet" href="https://vnuhcm.edu.vn/assets/styles/custom.css?v=2.2">
+    <script async src="https://vnuhcm.edu.vn/scripts/vendor2.js?v=2.7"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <ul class="navbar-top d-flex justify-content-end">
+                        <li class="dropdown">
+                            <button class="btn btn-link" type="button" id="dropdownSearch" data-toggle="dropdown" style="line-height: 2;"
+                                    aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-search" aria-labelledby="dropdownSearch">
+                                <form action="/tim-kiem" method="get">
+                                    <input class="form-control" type="text" name="search" placeholder="Tìm kiếm">
+                                    <button class="btn-link btn" type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <div class="">
+                                <a class="btn btn-link" style="padding: 5px; text-decoration: none; color: white" href="/lang/en">
+                                    English
+                                </a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        <img src="~/Content/Client/img/logohutech.jpg" alt="Trường Đại học Cộng Nghệ Tp Hồ Chí Minh" width="145">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link crop-text-1" href="/TinTucClient/Index">Tin tức</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link crop-text-1" href="/su-kien/33356864">#</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link crop-text-1" href="/BaiBaoClient/index">Bài Báo</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link crop-text-1" href="/dao-tao/33376864">#</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link crop-text-1" href="/doi-ngoai/34306864">#</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link crop-text-1" href="/sinh-vien/33386864">#</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link crop-text-1" href="/GioiThieuClient/index">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link crop-text-1" href="/LienHeClient/Create">Liên Hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>    
+        
+        @RenderBody()
+        <footer class="footer wow fadeInUp">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-ft-1 mb-3 mb-lg-0">
+                        <div class="footer-link">
+                            <h3 style="text-align: left">Đại học Công Nghệ TP. HỒ CHÍ MINH - HUTECH <i class="fa fa-angle-down d-md-none"></i></h3>
+                            <ul class="list-unstyled" style="list-style: none; margin-left: 35px; display: block !important;">
+                                <li><i class="fa fa-map-marker"></i>475A Điện Biên Phủ, P.25, Q.Bình Thạnh, TP.HCM</li>
+                                <li><i class="fa fa-phone"></i>Số điện thoại:  (028) 5445 7777</li>
+                                <li><i class="fa fa-mail-bulk"></i>Fax: (028) 5445 4444</li>
+                                <li><i class="fa fa-envelope"></i><a>Email: hutech@hutech.edu.vn</a></li>
+                                <li><i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/hutechuniversity/" target="_blank">Facebook</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col-ft-2 mb-3 mb-lg-0">
+                        <div class="footer-link">
+                            <h3>Danh mục <i class="fa fa-angle-down d-md-none"></i></h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/TinTucClient/index">Tin tức</a>
+                                </li>
+                                <li>
+                                    <a href="/su-kien/33356864">Sự kiện</a>
+                                </li>
+                                <li>
+                                    <a href="/BaiBaoClient/index">Bài Báo</a>
+                                </li>
+                                <li>
+                                    <a href="/dao-tao/33376864">Đào tạo</a>
+                                </li>
+                                <li>
+                                    <a href="/doi-ngoai/34306864">Đối ngoại</a>
+                                </li>
+                                <li>
+                                    <a href="/sinh-vien/33386864">Sinh viên</a>
+                                </li>
+                                <li>
+                                    <a href="/GioiThieuClient/Index">Giới Thiệu</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col col-ft-4 mb-3 mb-lg-0">
+                        <div class="footer-link">
+                            <h3>Liên hệ<i class="fa fa-angle-down d-md-none"></i></h3>
+                            <ul class="list-unstyled">
+                                
+                                <li><a href="/LienHeClient/Create">Hỗ trợ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-87720639-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-87720639-4');
+    </script>
+
+</body>
+</html>
